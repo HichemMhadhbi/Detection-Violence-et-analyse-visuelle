@@ -1,0 +1,164 @@
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+/* Container Styles */
+.stApp {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Inputs */
+input, textarea, select, .stTextInput > div > div > input {
+    border: 1px solid #007bff;
+    font-size: 1em;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-bottom: 1em;
+    transition: border-color 0.3s;
+    background-color: #e9f0f7;
+}
+
+input:focus, textarea:focus, select:focus, .stTextInput > div > div > input:focus {
+    border-color: #0056b3;
+    outline: none;
+    background-color: #dce9f3;
+}
+
+/* Buttons */
+button, .stButton > button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:hover, .stButton > button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* File Uploader */
+.stFileUploader {
+    border: 2px dashed #007bff;
+    border-radius: 5px;
+    background-color: #e9ecef;
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.stFileUploader:hover {
+    border-color: #0056b3;
+    background-color: #f4f9fc;
+}
+
+.stFileUploader .stButton {
+    background-color: #ffc107;
+    color: #212529;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stFileUploader .stButton:hover {
+    background-color: #e0a800;
+}
+
+.stFileUploader .stButton.primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.stFileUploader .stButton.secondary {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.stFileUploader .stButton.outline {
+    background-color: transparent;
+    color: #ffc107;
+    border: 1px solid #ffc107;
+}
+
+/* Alerts */
+.stAlert {
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.stAlert.success {
+    background-color: #d4edda;
+    color: #155724;
+    border-left: 5px solid #28a745;
+}
+
+.stAlert.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-left: 5px solid #dc3545;
+}
+
+/* Password Inputs */
+.stTextInput input[type="password"], .stPasswordInput > div > div > input {
+    font-family: 'Courier New', monospace;
+    letter-spacing: 0.3em;
+    background-color: #e9f0f7;
+}
+
+.stTextInput input[type="password"]:focus, .stPasswordInput > div > div > input:focus {
+    background-color: #dce9f3;
+}
+
+/* Add a smooth transition for all elements */
+* {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Streamlit-specific styling */
+.stMarkdown, .stMarkdown > p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.stSidebar {
+    background-color: #f8f9fa;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+}
+
+.stImage {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
